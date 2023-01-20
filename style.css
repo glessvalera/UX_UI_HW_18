@@ -1,0 +1,56 @@
+/* My UX Skills section coded using CSS flex */
+
+section {
+    display: flex;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    flex-shrink: 1;
+    width: 80%;
+    padding: 1%;
+    justify-content: space-around;
+    
+}
+
+.flexChildren {
+    padding: 3%;
+}
+
+
+.workGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+  <img src="images/works.png" alt="works">
+
+
+  @media only screen and (max-width: 600) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .flexChildren {
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px;
+
+    }
+  }
+
+ 
